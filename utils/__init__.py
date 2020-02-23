@@ -4,8 +4,13 @@ import ssim
 import shutil
 
 def findsplat(workdir):
-    """Starting at workdir, search each successive parent dir until we find
-       the splat executable"""
+    """Either return the value in the environment variable 'SPLAT' or
+       search for it by starting workdir and searching each successive
+       parent dir until we find the splat executable"""
+    envpath = os.getenv("SPLAT")
+    if envpath is not None:
+        return envpath
+
     (workdir, tail) = os.path.split(workdir)
     while tail:
         (workdir, tail) = os.path.split(workdir)
