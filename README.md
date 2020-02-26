@@ -13,7 +13,7 @@ Testsuite for SPLAT! using python's unittest
 * the SPLAT! binary must either be in the splat_testsuite directory (or symlinked), or you must set the environment variable SPLAT. For example, using bash
 on unix:
 
-    export SPLAT=$HOME/src/splat/src/splat
+    export SPLAT=$HOME/src/splat/build/src/splat
 
 ## Running
 Just do:
