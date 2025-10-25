@@ -3,17 +3,29 @@ Testsuite for SPLAT! using python's unittest
 
 ## Requirements:
 * python 3.7 or later
-
 * python libraries: pillow numpy scipy pyssim
+* the SPLAT! binary must either be in the splat_testsuite directory (or symlinked), or you must set the environment variable SPLAT.
 
-    You can typically install this with something like:
+
+## Setup
+
+Get the repo:
+
+    git clone https://github.com/hoche/splat_testsuite.git
+
+Set up a Python VirtualEnv (optional):
+
+    python3 -m venv splat_testsuite
+    cd splat_testsuite
+    source ./bin/activate
+
+Install python tools:
 
     pip3 install pillow numpy scipy pyssim
 
-* the SPLAT! binary must either be in the splat_testsuite directory (or symlinked), or you must set the environment variable SPLAT. For example, using bash
-on unix:
+Set SPLAT environment variable:
 
-    export SPLAT=$HOME/src/splat/build/src/splat
+    export SPLAT=$HOME/src/splat/build/splat
 
 ## Running
 Just do:
