@@ -9,10 +9,6 @@ Testsuite for SPLAT! using python's unittest
 
 ## Setup
 
-Get the repo:
-
-    git clone https://github.com/hoche/splat_testsuite.git
-
 Set up a Python VirtualEnv (optional):
 
     python3 -m venv splat_testsuite
@@ -22,6 +18,11 @@ Set up a Python VirtualEnv (optional):
 Install python tools:
 
     pip3 install pillow numpy scipy pyssim
+    
+Get the repo:
+
+    git clone https://github.com/hoche/splat_testsuite.git
+    cd splat_testsuite
 
 Set SPLAT environment variable:
 
